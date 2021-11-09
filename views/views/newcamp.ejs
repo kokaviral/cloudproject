@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/b2f0284777.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/newcamp.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    #mainnavbar
+{
+    background-color: #232323;
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    color: white;
+}
+a,a:hover 
+{ 
+    color: inherit; 
+} 
+a
+{
+    color: white;
+}
+a.nav-link,a.navbar-brand
+{
+    color: white;
+}
+
+
+
+#formcont
+{
+    /* background-image: url('/Images/scratches.png');       */
+    background-color: rgb(219, 215, 215);    
+    height: 600px;
+
+}
+
+#formcol
+{
+    padding-right: 0;
+    
+}
+#imgcol
+{
+    background-image: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29ybGQlMjBtYXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');  
+    background-size: cover;
+    background-position: center;       
+}
+#ft
+{
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    margin-top: 250px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-style: italic;
+}
+
+#add
+{
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    /* text-shadow: 1px 1px 1px #232323; */
+    font-size: 35px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#radio
+{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+
+}
+#new
+{
+    width: 200px;
+    /* border: none; */
+    height: 50px;
+    border-radius: 50px;
+    /* float: left; */
+}
+#new2
+{
+    width: 300px;
+    /* border: none; */
+    height: 50px;
+    border-radius: 50px;
+    /* float: left; */
+}
+#new3
+{
+    width: 445px;
+    /* border: none; */
+    height: 50px;
+    border-radius: 50px;
+    /* float: left; */
+}
+
+.names
+{
+    float: left;
+}
+
+.f
+{
+    padding: 10px;
+    background-color: rgb(189, 189, 189);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+input:focus
+{
+    outline: none;
+    border: 2px solid rgb(218, 68, 93);
+    background-color: inherit;
+}
+input:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
+
+input::-webkit-input-placeholder{
+    color: rgb(70, 70, 70);
+}
+
+#rad
+{
+    color: rgb(190, 22, 106);
+    
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #F87DA9;
+    border-radius: 100%;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 17px;
+    height: 17px;
+    background: #F87DA9;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+#text
+{
+    background-color: rgb(189, 189, 189);    
+    /* border: none; */
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#text::placeholder
+{
+    color: rgb(70, 70, 70);
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+
+}
+
+#text:focus
+{
+    height: 140px;
+    border: 2px solid rgb(218, 68, 93);
+    outline: none;
+    transition: 500ms all;
+    background-color: white;
+    
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md" id="mainnavbar">
+            <div class="container">
+            <a href="/" class="navbar-brand"><img src="/Images/Picture3.png" width="20px;"> YelpCamp</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#data">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="data">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">Yelp!</a>
+                        </li>
+                    
+                    </ul>
+
+                </div>
+            </div>
+            </nav>
+
+<div class="row mr-0">
+    
+    <div class="col-lg-7 pr-0" id="imgcol">
+    <p id="ft">“Great Things Never Come from Comfort Zones”</p>
+    </div>
+    <div class="col-lg-5 pl-0" id="formcol">
+        <div class="container" id="formcont">
+            <p id="add">Add your new Campground</p>
+            <form id="radio" action="/campgrounds">
+                <span style="margin-left: 50px; margin-right: 20px;">Renting:</span>
+                <input type="radio" value="Short" name="rent" id="t1">
+                <label for="t1" style="margin-right: 10px;">Short Term</label>
+                
+                <input type="radio" value="Long" name="rent" id="t2">
+                <label for="t2">Long Term</label>
+
+            </form>
+            <form action="/campgrounds" method="POST">
+            <!-- for getting inputs in same line -->
+            <div class="names">
+                <input  type="text" name="name" placeholder="Camp Name*" style="margin-bottom: 10px; margin-left: 30px;" id="new" class="f">
+                <input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" placeholder="Contact Number*" id="new" maxlength="10" style="margin-left: 40px;" class="f">
+            </div>
+            <br>
+            <!-- till here -->
+            <input  type="email" name="name2" placeholder="Email*" style="margin-bottom: 10px; margin-left: 30px;" id="new" class="f">
+            <input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" placeholder="Area Pin Code*" id="new" maxlength="6" id="new" style="margin-left: 40px;"class="f">            
+            <br>
+            <input type="text" placeholder="Image URL*" name="image"  style="margin-bottom: 10px; margin-left: 30px;" id="new3" class="f">
+            <br>
+            <textarea rows="2" cols="49" placeholder="Add description for your Campground" name="description"  style="margin-bottom: 10px; border-radius:5px; margin-left: 30px; margin-top: 10px;" id="text"></textarea>
+            <input class=" btn btn-primary btn-sm" type="Submit" style="margin-left: 200px;">
+            <a href="/campgrounds" class="btn btn-sm btn-danger" style="color: white;">Back</a>
+
+    </form>
+
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>
+
